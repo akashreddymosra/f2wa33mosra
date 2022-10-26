@@ -11,12 +11,12 @@ router.get('/',function(req,res,next) {
         x=y;
     }
 
-  res.render('computation', { val: `f(${x}) is ${Math.log(x)}` });
+  res.render('computation', { val: `f(${x}) is ${Math.cbrt(x)}` });
 })
 
 /* GET home page. */
 router.get(`/`,function(req,res,next){
-res.render('computation', { val: `f(${x}) is ${Math.log(x)}` });
+res.render('computation', { val: `f(${x}) is ${Math.cbrt(x)}` });
 res.end();
 });
 
