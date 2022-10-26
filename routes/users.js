@@ -5,7 +5,7 @@ var times=0;
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   times=times+1;
-  res.send('respond with a resource');
+  res.send('User accesses are: '+times);
 });
 
 module.exports = router;
